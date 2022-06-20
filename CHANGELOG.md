@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.0](https://github.com/antropovAlexandr/ttttt/compare/v1.2.0...v1.3.0) (2022-06-20)
+
+
+### Features
+
+* add ([cbc456e](https://github.com/antropovAlexandr/ttttt/commit/cbc456e192461cce0da13e4e295ece31a4b2c544))
+
 ## [1.2.0](https://github.com/antropovAlexandr/ttttt/compare/v1.1.0...v1.2.0) (2022-06-20)
 
 
