@@ -18,7 +18,8 @@ jobs:
 #          package-name: manifest.json
 #          command: manifest
 #          path: /build/dist/GustaveAgentPlugin
-          extra-files: /manifest.json
+          extra-files:
+            /manifest.json
 #            type: json
 #            path: build/dist/GustaveAgentPlugin/manifest.json
 #            jsonpath: $.json.path.to.field
