@@ -1,0 +1,28 @@
+on:
+  push:
+    branches:
+      - master
+name: release-please
+jobs:
+  release-please:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: google-github-actions/release-please-action@v3
+        with:
+          release-type: node
+          package-name: release-please-action
+#      - uses: google-github-actions/release-please-action@v3
+#        id: release
+#        with:
+#          release-type: node
+#          package-name: manifest.json
+#          command: manifest
+#          path: /build/dist/GustaveAgentPlugin
+#          extra-files: /manifest.json
+#            type: json
+#            path: build/dist/GustaveAgentPlugin/manifest.json
+#            jsonpath: $.json.path.to.field
+#            README.md
+#            build/dist/GustaveAgentPlugin/manifest.json
+#            README.md
+#            docs/getting-started.md

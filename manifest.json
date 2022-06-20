@@ -1,0 +1,38 @@
+{
+  "name": "Gustave Agent Plugin Queue",
+  "version": "1.0.0",
+  "description": "Gustave Agent Plugin for Auto Queue process on Search Pages",
+  "manifest_version": 2,
+  "permissions": [
+    "identity",
+    "activeTab",
+    "webNavigation",
+    "cookies",
+    "declarativeContent",
+    "storage",
+    "tabs",
+    "notifications",
+    "webRequest",
+    "http://*/*",
+    "https://*/*"
+  ],
+  "options_page": "options/options.html",
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  },
+  "content_scripts": [{
+    "matches": ["https://*.linkedin.com/*"],
+    "js": ["content.js"],
+    "css": ["styles.css"]
+  }],
+  "browser_action": {
+    "default_popup": "popups/popup.html"
+  },
+  "icons": {
+    "16": "icons/favicon.png",
+    "32": "icons/favicon.png",
+    "48": "icons/favicon.png",
+    "128": "icons/favicon.png"
+  }
+}
